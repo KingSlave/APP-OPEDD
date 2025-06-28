@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asistente Pre Organizador PEDD - Generador de Autoevaluación para el Programa de Estímulo al Desempeño Docente">
+    <meta name="keywords" content="PEDD, docente, autoevaluación, desempeño, educación">
+    <meta name="author" content="Carlos">
+    
+    <title>Organizador PEDD</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- CSS Bootstrap (opcional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Fuentes de Google (opcional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navegación -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>
+                ORGANIZADOR PEDD
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#como-usar">Cómo usar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#evaluacion">Evaluación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section bg-gradient py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Organizador PEDD
+                    </h1>
+                    <p class="lead mb-4">
+                        Generador de Autoevaluación para participar en el Programa de Estímulo al Desempeño Docente.
+                        Organiza y prepara tu documentación de manera eficiente.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#evaluacion" class="btn btn-light btn-lg">
+                            <i class="fas fa-play me-2"></i>
+                            Comenzar Evaluación
+                        </a>
+                        <a href="#como-usar" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-info-circle me-2"></i>
+                            Cómo funciona
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="hero-image">
+                        <i class="fas fa-chalkboard-teacher display-1 opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características principales -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="fw-bold mb-3">¿Por qué usar el Asistente PEDD?</h2>
+                    <p class="text-muted">Simplifica el proceso de autoevaluación docente</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-check-circle text-success fa-3x"></i>
+                            </div>
+                            <h5 class="card-title">Fácil de usar</h5>
+                            <p class="card-text text-muted">
+                                Interfaz intuitiva que te guía paso a paso en el proceso de autoevaluación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-file-alt text-primary fa-3x"></i>
+                            </div>
+                            <h5 class="card-title">Documentación organizada</h5>
+                            <p class="card-text text-muted">
+                                Organiza automáticamente toda tu documentación según los criterios PEDD.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="fas fa-download text-info fa-3x"></i>
+                            </div>
+                            <h5 class="card-title">Exportación rápida</h5>
+                            <p class="card-text text-muted">
+                                Descarga tu autoevaluación en formato PDF lista para presentar.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo usar -->
+    <section id="como-usar" class="how-to-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold mb-3">Cómo usar el asistente</h2>
+                    <p class="text-muted">Sigue estos simples pasos</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card text-center">
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 p-2">
+                            1
+                        </div>
+                        <h5>Completa el formulario</h5>
+                        <p class="text-muted">Ingresa tu información personal y académica</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card text-center">
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 p-2">
+                            2
+                        </div>
+                        <h5>Sube documentos</h5>
+                        <p class="text-muted">Adjunta los documentos de respaldo necesarios</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card text-center">
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 p-2">
+                            3
+                        </div>
+                        <h5>Revisa y valida</h5>
+                        <p class="text-muted">Verifica que toda la información esté correcta</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="step-card text-center">
+                        <div class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3 p-2">
+                            4
+                        </div>
+                        <h5>Descarga resultado</h5>
+                        <p class="text-muted">Obtén tu autoevaluación lista para presentar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Evaluación -->
+    <section id="evaluacion" class="evaluation-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-lg border-0">
+                        <div class="card-header bg-primary text-white text-center py-4">
+                            <h3 class="mb-0">
+                                <i class="fas fa-clipboard-list me-2"></i>
+                                Iniciar Autoevaluación PEDD
+                            </h3>
+                        </div>
+                        <div class="card-body p-5">
+                            <p class="text-center text-muted mb-4">
+                                Completa el formulario para generar tu autoevaluación personalizada
+                            </p>
+                            
+                            <!-- Aquí irá el formulario de evaluación -->
+                            <div class="text-center">
+                                <button class="btn btn-primary btn-lg" onclick="startEvaluation()">
+                                    <i class="fas fa-rocket me-2"></i>
+                                    Comenzar ahora
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="fw-bold mb-3">Organizador PEDD</h5>
+                    <p class="text-secondary mb-0">
+                        Desarrollado para facilitar el proceso de autoevaluación docente.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-secondary mb-2">Desarrollado por Carlos</p>
+                    <p class="text-secondary mb-0">Julio 2024 - <span id="current-year"></span></p>
+                </div>
+            </div>
+            <hr class="my-3 border-secondary">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-secondary mb-0">
+                        &copy; <span id="footer-year"></span> Asistente PEDD. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Font Awesome (para iconos) -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript personalizado -->
+    <script src="js/main.js"></script>
+    
+    <!-- Script inline básico -->
+    <script>
+        // Actualizar año actual
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
+        
+        // Función para iniciar evaluación
+        function startEvaluation() {
+            alert('¡Funcionalidad en desarrollo! Pronto podrás comenzar tu autoevaluación.');
+            // Aquí irá la lógica para iniciar la evaluación
+        }
+        
+        // Smooth scroll para los enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

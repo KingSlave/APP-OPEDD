@@ -1,5 +1,3 @@
-Asistente Pre Organizador PEDD
+# Organizador PEDD
 
-Generador de Autoevaluación para participar en el Programa de Estimulo al Desempeño Docente. 
-
-Julio 2024
+Organizador de archivos para participar en el Programa de Estimulo al Desempeño Docente. 
