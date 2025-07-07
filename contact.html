@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contacto - Asistente Pre Organizador PEDD">
     <meta name="keywords" content="PEDD, contacto, soporte, ayuda">
-    <title>Contacto - Asistente Pre Organizador PEDD</title>
-    
+    <title>Contacto - Organizador PEDD</title>
+      <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <!-- CSS Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS personalizado -->
@@ -27,16 +28,23 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             
+           
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Acerca de</a>
+                        <a class="nav-link" href="index.html#como-usar">Cómo usar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#evaluacion">Evaluación</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Acerca de..</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +59,7 @@
                     <div class="text-center mb-5">
                         <h1 class="display-4 fw-bold text-primary mb-3">Contacto</h1>
                         <p class="lead text-muted">
-                            ¿Tienes dudas sobre el Asistente PEDD? Estamos aquí para ayudarte.
+                            ¿Tienes dudas sobre el Organizador PEDD? Estamos aquí para ayudarte.
                         </p>
                     </div>
                 </div>
@@ -68,55 +76,7 @@
                             </h3>
                         </div>
                         <div class="card-body p-4">
-                            <form id="contactForm">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <label for="firstName" class="form-label">Nombre *</label>
-                                        <input type="text" class="form-control" id="firstName" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="lastName" class="form-label">Apellido *</label>
-                                        <input type="text" class="form-control" id="lastName" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="email" class="form-label">Correo electrónico *</label>
-                                        <input type="email" class="form-control" id="email" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="institution" class="form-label">Institución educativa</label>
-                                        <input type="text" class="form-control" id="institution">
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="subject" class="form-label">Asunto *</label>
-                                        <select class="form-select" id="subject" required>
-                                            <option value="">Selecciona un tema</option>
-                                            <option value="soporte">Soporte técnico</option>
-                                            <option value="dudas">Dudas sobre PEDD</option>
-                                            <option value="sugerencia">Sugerencia de mejora</option>
-                                            <option value="error">Reporte de error</option>
-                                            <option value="otro">Otro</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12">
-                                        <label for="message" class="form-label">Mensaje *</label>
-                                        <textarea class="form-control" id="message" rows="5" placeholder="Describe tu consulta o comentario..." required></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="privacy" required>
-                                            <label class="form-check-label" for="privacy">
-                                                Acepto el tratamiento de mis datos según la política de privacidad *
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="submit" class="btn btn-primary btn-lg">
-                                            <i class="fas fa-paper-plane me-2"></i>
-                                            Enviar mensaje
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdqwkN5I1lcOPSWD2eYE5Xoc1Wl8h9x_OOw46x1RDO0kh5LUQ/viewform?embedded=true" width="640" height="1121" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
                         </div>
                     </div>
                 </div>
@@ -133,7 +93,7 @@
                                 </div>
                                 <div>
                                     <h5 class="fw-semibold mb-1">Desarrollador</h5>
-                                    <p class="text-muted mb-0">Carlos</p>
+                                    <p class="text-muted mb-0">King Slave</p>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +129,7 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                            ¿Cómo funciona el asistente?
+                                            ¿Cómo funciona el organizador?
                                         </button>
                                     </h2>
                                     <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -187,7 +147,7 @@
                                     </h2>
                                     <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                         <div class="accordion-body">
-                                            Sí, el Asistente Pre Organizador PEDD es completamente gratuito para todos los docentes.
+                                            Sí, el Organizador PEDD es completamente gratuito para todos los docentes. El proyecto es mantenido a través de donaciones voluntarias.
                                         </div>
                                     </div>
                                 </div>
@@ -223,27 +183,46 @@
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    
     
     <script>
         // Manejo del formulario de contacto
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Simular envío del formulario
-            const btn = this.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-            
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Enviando...';
-            btn.disabled = true;
-            
-            setTimeout(() => {
-                alert('¡Mensaje enviado! Te responderemos pronto.');
-                this.reset();
-                btn.innerHTML = originalText;
-                btn.disabled = false;
-            }, 2000);
+            event.preventDefault(); // Evita el envío tradicional del formulario HTML
+
+                const form = event.target;
+                const formData = new FormData(form); // Obtiene todos los campos del formulario
+
+                // URL de respuesta de tu Google Form
+                // ¡¡¡CAMBIA ESTO CON LA URL QUE OBTUVISTE EN EL PASO 1!!!
+                const googleFormUrl ="https://docs.google.com/forms/d/e/1FAIpQLSdqwkN5I1lcOPSWD2eYE5Xoc1Wl8h9x_OOw46x1RDO0kh5LUQ/formResponse";//  'https://docs.google.com/forms/d/e/TU_ID_DEL_FORMULARIO/formResponse';
+
+                // Construye los parámetros de la URL para la solicitud POST
+                // FormData.forEach() itera sobre cada par clave-valor
+                const params = new URLSearchParams();
+                formData.forEach((value, key) => {
+                    params.append(key, value);
+                });
+
+                // Realiza la solicitud POST usando fetch
+                fetch(googleFormUrl, {
+                    method: 'POST',
+                    body: params, // Los datos deben ir como URL-encoded
+                    mode: 'no-cors' // Crucial para evitar errores CORS con Google Forms
+                })
+                .then(response => {
+                    // En modo 'no-cors', la respuesta será un objeto "opaco"
+                    // No podrás leer el contenido de la respuesta ni verificar un código de estado 200 directamente.
+                    // Esto es una limitación de seguridad de los navegadores.
+                    // Asumimos que si no hay error de red, el envío fue "exitoso" desde el punto de vista del navegador.
+
+                    document.getElementById('status').textContent = 'Formulario enviado con éxito (o al menos sin errores de red). Verifica tu Google Sheet.';
+                    form.reset(); // Limpia el formulario después del envío
+                })
+                .catch(error => {
+                    console.error('Error al enviar el formulario:', error);
+                    document.getElementById('status').textContent = 'Hubo un error al enviar el formulario.';
+                });
         });
     </script>
 </body>
