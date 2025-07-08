@@ -221,18 +221,17 @@
                             </div>
                             
                             <div id="release-info" style="display: none;">
-                                <div class="box">
+                                <div class="">
                                     <h2 class="subtitle" id="release-version"></h2>
-                                    <p id="release-description"></p>
-                                    
-                                    <div class="buttons" id="download-buttons">
+                                    <p id="release-description"></p>                                                                        
+                                    <div class="buttons" id="download-buttons" style="position: relative; width: 100%;">
                                         <!-- Los botones se generarán dinámicamente -->
                                     </div>
                                 </div>
                             </div>
                             
-                            <div id="error" class="alert alert-danger" style="display: none;">
-                                No se pudo cargar la información de descarga. Intente mas tarde. 
+                            <div id="error" class="alert alert-warning" style="display: none;">
+                                Aún no se ha liberado ninguna versión.
                             </div>
 
                         </div>
@@ -305,21 +304,25 @@
             release.assets.forEach(asset => {
                 const button = document.createElement('a');
                 button.href = asset.browser_download_url;
-                button.className = 'btn btn-primary btn-lg mr-2 mb-2';
+                button.className = 'btn btn-primary btn-block btn-lg mt-1 w-100';
                 button.download = asset.name;
+                
                 
                 // Iconos según el tipo de archivo
                 let icon = '';
-                if (asset.name.includes('.exe')) {
-                    icon = '<i class="fab fa-windows"></i> ';
-                } else if (asset.name.includes('.dmg')) {
-                    icon = '<i class="fab fa-apple"></i> ';
-                } else if (asset.name.includes('.AppImage') || asset.name.includes('.deb')) {
-                    icon = '<i class="fab fa-linux"></i> ';
+                if((asset.name.includes('.exe') || asset.name.includes('.dmg') || asset.name.includes('.AppImage') || asset.name.includes('.deb')) && !asset.name.includes('.blockmap')){
+                    if (asset.name.includes('.exe')) {
+                        icon = '<i class="fab fa-windows"></i> ';
+                    } else if (asset.name.includes('.dmg')) {
+                        icon = '<i class="fab fa-apple"></i> ';
+                    } else if (asset.name.includes('.AppImage') || asset.name.includes('.deb')) {
+                        icon = '<i class="fab fa-linux"></i> ';
+                    }
+                    
+                    button.innerHTML = `${icon}${asset.name} (${formatFileSize(asset.size)})`;
+                    buttonsContainer.appendChild(button);
                 }
-                
-                button.innerHTML = `${icon}${asset.name} (${formatFileSize(asset.size)})`;
-                buttonsContainer.appendChild(button);
+
             });
         }
         
