@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Asistente Pre Organizador PEDD - Generador de Autoevaluación para el Programa de Estímulo al Desempeño Docente">
+    <meta name="description" content="Asistente Organizador PEDD - Generador de Autoevaluación para el Programa de Estímulo al Desempeño Docente">
     <meta name="keywords" content="PEDD, docente, autoevaluación, desempeño, educación">
-    <meta name="author" content="Carlos">
+    <meta name="author" content="King Slave">
     
     <title>Organizador PEDD</title>
     
@@ -292,12 +292,10 @@
         function displayRelease(release) {
             document.getElementById('loading').style.display = 'none';
             document.getElementById('release-info').style.display = 'block';
-            
-            // Mostrar información del release
+                        
             document.getElementById('release-version').textContent = `Versión ${release.tag_name}`;
             document.getElementById('release-description').textContent = release.body || 'Última versión disponible';
-            
-            // Generar botones de descarga
+                        
             const buttonsContainer = document.getElementById('download-buttons');
             buttonsContainer.innerHTML = '';
             
@@ -306,14 +304,12 @@
                 button.href = asset.browser_download_url;
                 button.className = 'btn btn-primary btn-block btn-lg mt-1 w-100';
                 button.download = asset.name;
-                
-                
-                // Iconos según el tipo de archivo
+                                                
                 let icon = '';
-                if((asset.name.includes('.exe') || asset.name.includes('.dmg') || asset.name.includes('.AppImage') || asset.name.includes('.deb')) && !asset.name.includes('.blockmap')){
+                if((asset.name.includes('.exe') || asset.name.includes('.pkg') || asset.name.includes('.dmg') || asset.name.includes('.AppImage') || asset.name.includes('.deb')) && !asset.name.includes('.blockmap')){
                     if (asset.name.includes('.exe')) {
                         icon = '<i class="fab fa-windows"></i> ';
-                    } else if (asset.name.includes('.dmg')) {
+                    } else if (asset.name.includes('.dmg') || asset.name.includes('.pkg')) {
                         icon = '<i class="fab fa-apple"></i> ';
                     } else if (asset.name.includes('.AppImage') || asset.name.includes('.deb')) {
                         icon = '<i class="fab fa-linux"></i> ';
@@ -337,8 +333,7 @@
             const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
             return Math.round(bytes / Math.pow(1024, i) * 100) / 100 + ' ' + sizes[i];
         }
-        
-        // Cargar al iniciar la página
+                
         loadLatestRelease();
     </script>
 </body>
