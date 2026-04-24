@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
 
 <body>
     <!-- Header/Navegación -->
-    <header class="navbar navbar-expand-lg navbar-light glass-nav sticky-top">
+    <header class="navbar navbar-expand-lg navbar-dark glass-nav sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold text-primary" href="index.html">
                 <i class="fas fa-folder me-2"></i>
@@ -42,9 +42,6 @@
                         <a class="nav-link" href="index.html#evaluacion">Evaluación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link active" href="about.html">Acerca de..</a>
                     </li>
                 </ul>
@@ -53,7 +50,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="about-hero py-5 bg-light">
+    <section class="about-hero py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -136,7 +133,7 @@
     </section>
 
     <!-- Problema y Solución -->
-    <section class="problem-solution py-5 bg-light">
+    <section class="problem-solution py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6">
@@ -219,11 +216,12 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="fw-bold mb-3">Características</h2>
-                <p class="text-muted">Tecnología moderna para una experiencia superior</p>
+                <p class="text-muted">Tecnología que mejora la experiencia en el proceso de participación del PEDD.
+                </p>
             </div>
 
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="tech-card text-center p-4">
                         <div class="tech-icon text-primary mb-3">
                             <i class="fab fa-windows fa-3x"></i> <i class="fab fa-apple fa-3x"></i>
@@ -233,7 +231,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="tech-card text-center p-4">
                         <div class="tech-icon text-info mb-3">
                             <i class="fas fa-user-cog fa-3x"></i>
@@ -243,17 +241,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="tech-card text-center p-4">
-                        <div class="tech-icon text-warning mb-3">
-                            <i class="fas fa-hand-holding-dollar fa-3x"></i>
-                        </div>
-                        <h5 class="fw-semibold">Gratuito</h5>
-                        <p class="text-muted">La aplicación está disponible sin costo. </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="tech-card text-center p-4">
                         <div class="tech-icon text-success mb-3">
                             <i class="fas fa-sync fa-3x"></i>
@@ -266,68 +254,8 @@
         </div>
     </section>
 
-    <!-- Sobre el desarrollador -->
-    <section class="developer-info py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-5 text-center">
-                            <div class="developer-avatar mb-4">
-                                <div
-                                    class="avatar-placeholder bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center">
-                                    <i class="fas fa-user fa-3x"></i>
-                                </div>
-                            </div>
-                            <h3 class="fw-bold mb-3">Sobre el Desarrollador</h3>
-                            <p class="lead text-muted mb-4">
-                                Este proyecto fue desarrollado por <strong>King Slave</strong>,
-                                con el objetivo de facilitar y mejorar el proceso de
-                                autoevaluación docente en el marco del PEDD.
-                            </p>
-                            <p class="text-muted">
-                                La motivación principal fue crear una herramienta que permita
-                                a los docentes enfocarse en lo más importante: su desarrollo
-                                profesional y la mejora continua de su práctica educativa.
-                            </p>
-                            <div class="contact-developer mt-4">
-                                <a href="contact.html" class="btn btn-primary">
-                                    <i class="fas fa-envelope me-2"></i>
-                                    Contactar
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Roadmap del proyecto -->
-    <section class="roadmap py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold mb-3">Ruta histórica</h2>
-                <p class="text-muted">Línea de tiempo de las características y mejoras</p>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-marker bg-success"></div>
-                            <div class="timeline-content">
-                                <h5 class="fw-semibold text-success">Versión 1.0 - 2026</h5>
-                                <p class="text-muted">Funcionalidad esencial para la autoevaluación docente.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contacto" class="footer bg-dark text-white py-4">
+    <footer id="contacto" class="footer py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -337,8 +265,8 @@
                     </p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="text-secondary mb-2">Desarrollado por King Slave</p>
-                    <p class="text-secondary mb-0">Julio 2025<span id="current-year"></span></p>
+                    <p class="text-secondary mb-2">Desarrollado por Carlos Reyes Dueñas</p>
+                    <p class="text-secondary mb-0">2026<span id="current-year"></span></p>
                 </div>
             </div>
             <hr class="my-3 border-secondary">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 
 <body>
     <!-- Header/Navegación -->
-    <header class="navbar navbar-expand-lg navbar-light glass-nav sticky-top">
+    <header class="navbar navbar-expand-lg navbar-dark glass-nav sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold text-primary" href="index.html">
                 <i class="fas fa-folder me-2"></i>
@@ -42,9 +42,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#evaluacion">Descargar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">Acerca de..</a>
@@ -88,7 +85,7 @@
     </section>
 
     <!-- Características principales -->
-    <section class="features-section py-5">
+    <section class="features-section py-5" id="caracteristicas">
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="col-12">
@@ -100,13 +97,13 @@
 
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <div class="card h-100">
                         <div class="card-body text-center p-4">
                             <div class="feature-icon mb-3">
-                                <i class="fas fa-check-circle text-success fa-3x"></i>
+                                <i class="fas fa-check-circle fa-3x" style="color:var(--success)"></i>
                             </div>
                             <h5 class="card-title">Fácil de usar</h5>
-                            <p class="card-text text-muted">
+                            <p class="card-text">
                                 Interfaz intuitiva que te guía paso a paso en el proceso de autoevaluación.
                             </p>
                         </div>
@@ -114,13 +111,13 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <div class="card h-100">
                         <div class="card-body text-center p-4">
                             <div class="feature-icon mb-3">
-                                <i class="fas fa-file-alt text-primary fa-3x"></i>
+                                <i class="fas fa-file-alt fa-3x" style="color:var(--accent)"></i>
                             </div>
                             <h5 class="card-title">Documentación organizada</h5>
-                            <p class="card-text text-muted">
+                            <p class="card-text">
                                 Organiza toda tu documentación según los criterios PEDD.
                             </p>
                         </div>
@@ -128,14 +125,14 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <div class="card h-100">
                         <div class="card-body text-center p-4">
                             <div class="feature-icon mb-3">
-                                <i class="fas fa-arrow-down-up-lock text-info fa-3x"></i>
+                                <i class="fas fa-arrow-down-up-lock fa-3x" style="color:var(--info)"></i>
                             </div>
                             <h5 class="card-title">Expedientes privados</h5>
-                            <p class="card-text text-muted">
-                                OPEDD respeta la propiedad de tus archivos, de modo que solo tu tengas control y copia
+                            <p class="card-text">
+                                OPEDD respeta la propiedad de tus archivos, de modo que solo tú tengas control y copia
                                 de todo lo que organizas.
                             </p>
                         </div>
@@ -146,7 +143,7 @@
     </section>
 
     <!-- Cómo usar -->
-    <section id="como-usar" class="how-to-section py-5 bg-light">
+    <section id="como-usar" class="how-to-section py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
@@ -158,45 +155,33 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
                     <div class="step-card text-center">
-                        <div
-                            class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
-                            1
-                        </div>
+                        <div class="step-number">1</div>
                         <h5>Configura la aplicación</h5>
-                        <p class="text-muted">Configura el año para autoevaluar y elige donde guardar tus archivos.</p>
+                        <p>Configura el año para autoevaluar y elige donde guardar tus archivos.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                     <div class="step-card text-center">
-                        <div
-                            class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
-                            2
-                        </div>
+                        <div class="step-number">2</div>
                         <h5>Importa el sistema de evaluación</h5>
-                        <p class="text-muted">Selecciona el sistema de evaluación que aplicarás</p>
+                        <p>Selecciona el sistema de evaluación que aplicarás.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                     <div class="step-card text-center">
-                        <div
-                            class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
-                            3
-                        </div>
+                        <div class="step-number">3</div>
                         <h5>Carga tus documentos</h5>
-                        <p class="text-muted">Carga tus documentos en el apartado correspondiente.</p>
+                        <p>Carga tus documentos en el apartado correspondiente.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                     <div class="step-card text-center">
-                        <div
-                            class="step-number bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
-                            4
-                        </div>
+                        <div class="step-number">4</div>
                         <h5>Proyecta tu avance</h5>
-                        <p class="text-muted">Proyecta tu alcance de puntos y obtén tu autoevaluación.</p>
+                        <p>Proyecta tu alcance de puntos y obtén tu autoevaluación.</p>
                     </div>
                 </div>
             </div>
@@ -204,7 +189,7 @@
     </section>
 
     <!-- Sección de Evaluación -->
-    <section id="evaluacion" class="evaluation-section py-5">
+    <section id="evaluacion" class="evaluation-section py-5" style="background:var(--bg-elevated)">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -228,7 +213,7 @@
                             <div id="release-info" style="display: none;">
                                 <div class="">
                                     <h2 class="fw-bold text-primary mb-3" id="release-version"></h2>
-                                    <div id="release-description" class="markdown-container text-start mt-4 mb-4"></div>
+                                    <!-- <div id="release-description" class="markdown-container text-start mt-4 mb-4"></div> -->
                                     <div class="buttons grid gap-3" id="download-buttons"
                                         style="position: relative; width: 100%;">
                                         <!-- Los botones se generarán dinámicamente -->
@@ -248,7 +233,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contacto" class="footer bg-dark text-white py-4">
+    <footer id="contacto" class="footer py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -258,7 +243,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <p class="text-secondary mb-2">Desarrollado por King Slave</p>
+                    <p class="text-secondary mb-2">Desarrollado por Carlos Reyes Dueñas</p>
                     <p class="text-secondary mb-0">2026<span id="current-year"></span></p>
                 </div>
             </div>
@@ -298,7 +283,7 @@
 
             // Mostrar información del release
             document.getElementById('release-version').textContent = `Versión ${release.tag_name}`;
-            document.getElementById('release-description').innerHTML = release.body ? marked.parse(release.body) : 'Última versión disponible';
+            // document.getElementById('release-description').innerHTML = release.body ? marked.parse(release.body) : 'Última versión disponible';
 
             // Generar botones de descarga
             const buttonsContainer = document.getElementById('download-buttons');
