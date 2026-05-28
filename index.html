@@ -1,334 +1,449 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Asistente Pre Organizador PEDD - Generador de Autoevaluación para el Programa de Estímulo al Desempeño Docente"
+        />
+        <meta
+            name="keywords"
+            content="PEDD, docente, autoevaluación, desempeño, educación"
+        />
+        <meta name="author" content="Carlos" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Asistente Pre Organizador PEDD - Generador de Autoevaluación para el Programa de Estímulo al Desempeño Docente">
-    <meta name="keywords" content="PEDD, docente, autoevaluación, desempeño, educación">
-    <meta name="author" content="Carlos">
+        <title>Organizador PEDD</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
 
-    <title>Organizador PEDD</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <body>
+        <!-- Header/Navegación -->
+        <header
+            class="navbar navbar-expand-lg navbar-dark glass-nav sticky-top"
+        >
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="index.html">
+                    <i class="fas fa-folder me-2"></i>
+                    ORGANIZADOR PEDD
+                </a>
 
-<body>
-    <!-- Header/Navegación -->
-    <header class="navbar navbar-expand-lg navbar-dark glass-nav sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="index.html">
-                <i class="fas fa-folder me-2"></i>
-                ORGANIZADOR PEDD
-            </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#como-usar">Cómo usar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#evaluacion">Descargar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Acerca de..</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="inicio" class="hero-section bg-gradient py-5">
-        <div class="container">
-            <div class="row align-items-center min-vh-75">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">
-                        Organizador PEDD
-                    </h1>
-                    <p class="lead mb-4">
-                        Pon todo en orden para participar en el Programa de Estímulo al Desempeño Docente (PEDD), de los
-                        Tecnológicos Descentralizados.
-                        Organiza y prepara tu documentación de manera eficiente.
-                    </p>
-                    <div class="d-flex gap-3">
-                        <a href="#evaluacion" class="btn btn-outline-primary btn-lg">
-                            <i class="fas fa-download me-2"></i>
-                            Descargar
-                        </a>
-                        <a href="#como-usar" class="btn btn-outline-success btn-lg">
-                            <i class="fas fa-info-circle me-2"></i>
-                            Cómo funciona
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <div class="hero-image about-illustration">
-                        <img class="display-1 opacity-75" src="images/logo.png" alt="OPEDD">
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html#inicio"
+                                >Inicio</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#como-usar"
+                                >Cómo usar</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#evaluacion"
+                                >Descargar</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html"
+                                >Acerca de..</a
+                            >
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Características principales -->
-    <section class="features-section py-5" id="caracteristicas">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-12">
-                    <h2 class="fw-bold mb-3">¿Por qué usar el Organizador PEDD?</h2>
-                    <p class="text-muted">Simplifica el proceso de autoevaluación docente. Maneja de tus archivos de
-                        forma privada. </p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon mb-3">
-                                <i class="fas fa-check-circle fa-3x" style="color:var(--success)"></i>
-                            </div>
-                            <h5 class="card-title">Fácil de usar</h5>
-                            <p class="card-text">
-                                Interfaz intuitiva que te guía paso a paso en el proceso de autoevaluación.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon mb-3">
-                                <i class="fas fa-file-alt fa-3x" style="color:var(--accent)"></i>
-                            </div>
-                            <h5 class="card-title">Documentación organizada</h5>
-                            <p class="card-text">
-                                Organiza toda tu documentación según los criterios PEDD.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center p-4">
-                            <div class="feature-icon mb-3">
-                                <i class="fas fa-arrow-down-up-lock fa-3x" style="color:var(--info)"></i>
-                            </div>
-                            <h5 class="card-title">Expedientes privados</h5>
-                            <p class="card-text">
-                                OPEDD respeta la propiedad de tus archivos, de modo que solo tú tengas control y copia
-                                de todo lo que organizas.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cómo usar -->
-    <section id="como-usar" class="how-to-section py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="fw-bold mb-3">Cómo usar el organizador</h2>
-                    <p class="text-muted">Sigue estos simples pasos</p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="step-card text-center">
-                        <div class="step-number">1</div>
-                        <h5>Configura la aplicación</h5>
-                        <p>Configura el año para autoevaluar y elige donde guardar tus archivos.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="step-card text-center">
-                        <div class="step-number">2</div>
-                        <h5>Importa el sistema de evaluación</h5>
-                        <p>Selecciona el sistema de evaluación que aplicarás.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="step-card text-center">
-                        <div class="step-number">3</div>
-                        <h5>Carga tus documentos</h5>
-                        <p>Carga tus documentos en el apartado correspondiente.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="step-card text-center">
-                        <div class="step-number">4</div>
-                        <h5>Proyecta tu avance</h5>
-                        <p>Proyecta tu alcance de puntos y obtén tu autoevaluación.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Evaluación -->
-    <section id="evaluacion" class="evaluation-section py-5" style="background:var(--bg-elevated)">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card shadow-lg border-0">
-                        <div class="card-header bg-primary text-white text-center py-4">
-                            <h3 class="mb-0">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section bg-gradient py-5">
+            <div class="container">
+                <div class="row align-items-center min-vh-75">
+                    <div class="col-lg-6">
+                        <h1 class="display-4 fw-bold mb-4">Organizador PEDD</h1>
+                        <p class="lead mb-4">
+                            Pon todo en orden para participar en el Programa de
+                            Estímulo al Desempeño Docente (PEDD), de los
+                            Tecnológicos Descentralizados. Organiza y prepara tu
+                            documentación de manera eficiente.
+                        </p>
+                        <div class="d-flex gap-3">
+                            <a
+                                href="#evaluacion"
+                                class="btn btn-outline-primary btn-lg"
+                            >
                                 <i class="fas fa-download me-2"></i>
-                                Descarga el Organizador PEDD
-                            </h3>
+                                Descargar
+                            </a>
+                            <a
+                                href="#como-usar"
+                                class="btn btn-outline-success btn-lg"
+                            >
+                                <i class="fas fa-info-circle me-2"></i>
+                                Cómo funciona
+                            </a>
                         </div>
-                        <div class="card-body p-5">
-                            <p class="text-center text-muted mb-4">
-                                Descarga y organiza tus archivos de manera eficiente para participar en el Programa de
-                                Estímulo al Desempeño Docente (PEDD).
-                            </p>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <div class="hero-image about-illustration">
+                            <img
+                                class="display-1 opacity-75"
+                                src="images/logo.png"
+                                alt="OPEDD"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                            <div id="loading" class="alert alert-info">
-                                <i class="fas fa-spinner fa-spin"></i> Cargando último release...
+        <!-- Características principales -->
+        <section class="features-section py-5" id="caracteristicas">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-12">
+                        <h2 class="fw-bold mb-3">
+                            ¿Por qué usar el Organizador PEDD?
+                        </h2>
+                        <p class="text-muted">
+                            Simplifica el proceso de autoevaluación docente.
+                            Maneja de tus archivos de forma privada.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="feature-icon mb-3">
+                                    <i
+                                        class="fas fa-check-circle fa-3x"
+                                        style="color: var(--success)"
+                                    ></i>
+                                </div>
+                                <h5 class="card-title">Fácil de usar</h5>
+                                <p class="card-text">
+                                    Interfaz intuitiva que te guía paso a paso
+                                    en el proceso de autoevaluación.
+                                </p>
                             </div>
+                        </div>
+                    </div>
 
-                            <div id="release-info" style="display: none;">
-                                <div class="">
-                                    <h2 class="fw-bold text-primary mb-3" id="release-version"></h2>
-                                    <!-- <div id="release-description" class="markdown-container text-start mt-4 mb-4"></div> -->
-                                    <div class="buttons grid gap-3" id="download-buttons"
-                                        style="position: relative; width: 100%;">
-                                        <!-- Los botones se generarán dinámicamente -->
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="feature-icon mb-3">
+                                    <i
+                                        class="fas fa-file-alt fa-3x"
+                                        style="color: var(--accent)"
+                                    ></i>
+                                </div>
+                                <h5 class="card-title">
+                                    Documentación organizada
+                                </h5>
+                                <p class="card-text">
+                                    Organiza toda tu documentación según los
+                                    criterios PEDD.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center p-4">
+                                <div class="feature-icon mb-3">
+                                    <i
+                                        class="fas fa-arrow-down-up-lock fa-3x"
+                                        style="color: var(--info)"
+                                    ></i>
+                                </div>
+                                <h5 class="card-title">Expedientes privados</h5>
+                                <p class="card-text">
+                                    OPEDD respeta la propiedad de tus archivos,
+                                    de modo que solo tú tengas control y copia
+                                    de todo lo que organizas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo usar -->
+        <section id="como-usar" class="how-to-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="fw-bold mb-3">Cómo usar el organizador</h2>
+                        <p class="text-muted">Sigue estos simples pasos</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="step-card text-center">
+                            <div class="step-number">1</div>
+                            <h5>Configura la aplicación</h5>
+                            <p>
+                                Configura el año para autoevaluar y elige donde
+                                guardar tus archivos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="step-card text-center">
+                            <div class="step-number">2</div>
+                            <h5>Importa el sistema de evaluación</h5>
+                            <p>
+                                Selecciona el sistema de evaluación que
+                                aplicarás.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="step-card text-center">
+                            <div class="step-number">3</div>
+                            <h5>Carga tus documentos</h5>
+                            <p>
+                                Carga tus documentos en el apartado
+                                correspondiente.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="step-card text-center">
+                            <div class="step-number">4</div>
+                            <h5>Proyecta tu avance</h5>
+                            <p>
+                                Proyecta tu alcance de puntos y obtén tu
+                                autoevaluación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Evaluación -->
+        <section
+            id="evaluacion"
+            class="evaluation-section py-5"
+            style="background: var(--bg-elevated)"
+        >
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="card shadow-lg border-0">
+                            <div
+                                class="card-header bg-primary text-white text-center py-4"
+                            >
+                                <h3 class="mb-0">
+                                    <i class="fas fa-download me-2"></i>
+                                    Descarga el Organizador PEDD
+                                </h3>
+                            </div>
+                            <div class="card-body p-5">
+                                <p class="text-center text-muted mb-4">
+                                    Descarga y organiza tus archivos de manera
+                                    eficiente para participar en el Programa de
+                                    Estímulo al Desempeño Docente (PEDD).
+                                </p>
+
+                                <div id="loading" class="alert alert-info">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Cargando último release...
+                                </div>
+
+                                <div id="release-info" style="display: none">
+                                    <div class="">
+                                        <h2
+                                            class="fw-bold text-primary mb-3"
+                                            id="release-version"
+                                        ></h2>
+                                        <!-- <div id="release-description" class="markdown-container text-start mt-4 mb-4"></div> -->
+                                        <div
+                                            class="buttons grid gap-3"
+                                            id="download-buttons"
+                                            style="
+                                                position: relative;
+                                                width: 100%;
+                                            "
+                                        >
+                                            <!-- Los botones se generarán dinámicamente -->
+                                        </div>
+
+                                        <a
+                                            href="https://apps.microsoft.com/detail/9P4FKMVJQBRJ?hl=es&gl=MX&ocid=pdpshare"
+                                            target="_blank"
+                                            class="btn btn-success btn-block btn-lg mt-3 w-100 shadow-sm"
+                                        >
+                                            <i class="fab fa-windows me-2"></i>
+                                            Descargar para Windows desde
+                                            Microsoft Store
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div id="error" class="alert alert-warning" style="display: none;">
-                                Aún no se ha liberado ninguna versión.
+                                <div
+                                    id="error"
+                                    class="alert alert-warning"
+                                    style="display: none"
+                                >
+                                    Aún no se ha liberado ninguna versión.
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer id="contacto" class="footer py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5 class="fw-bold mb-3">Organizador PEDD</h5>
-                    <p class="text-secondary mb-0">
-                        Desarrollado para facilitar el proceso de autoevaluación docente.
-                    </p>
+        <!-- Footer -->
+        <footer id="contacto" class="footer py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="fw-bold mb-3">Organizador PEDD</h5>
+                        <p class="text-secondary mb-0">
+                            Desarrollado para facilitar el proceso de
+                            autoevaluación docente.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="text-secondary mb-2">
+                            Desarrollado por Carlos Reyes Dueñas
+                        </p>
+                        <p class="text-secondary mb-0">
+                            2026<span id="current-year"></span>
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="text-secondary mb-2">Desarrollado por Carlos Reyes Dueñas</p>
-                    <p class="text-secondary mb-0">2026<span id="current-year"></span></p>
+                <hr class="my-3 border-secondary" />
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="text-secondary mb-0">
+                            &copy; <span id="footer-year"></span> Organizador
+                            PEDD. Todos los derechos reservados.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <hr class="my-3 border-secondary">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="text-secondary mb-0">
-                        &copy; <span id="footer-year"></span> Organizador PEDD. Todos los derechos reservados.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        async function loadLatestRelease() {
-            try {
-                const response = await fetch('https://api.github.com/repos/KingSlave/APP-OPEDD/releases/latest');
-                const release = await response.json();
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+            async function loadLatestRelease() {
+                try {
+                    const response = await fetch(
+                        "https://api.github.com/repos/KingSlave/APP-OPEDD/releases/latest",
+                    );
+                    const release = await response.json();
 
-                if (response.ok) {
-                    displayRelease(release);
-                } else {
+                    if (response.ok) {
+                        displayRelease(release);
+                    } else {
+                        showError();
+                    }
+                } catch (error) {
+                    console.error("Error:", error);
                     showError();
                 }
-            } catch (error) {
-                console.error('Error:', error);
-                showError();
             }
-        }
 
-        function displayRelease(release) {
-            document.getElementById('loading').style.display = 'none';
-            document.getElementById('release-info').style.display = 'block';
+            function displayRelease(release) {
+                document.getElementById("loading").style.display = "none";
+                document.getElementById("release-info").style.display = "block";
 
-            // Mostrar información del release
-            document.getElementById('release-version').textContent = `Versión ${release.tag_name}`;
-            // document.getElementById('release-description').innerHTML = release.body ? marked.parse(release.body) : 'Última versión disponible';
+                // document.getElementById('release-description').innerHTML = release.body ? marked.parse(release.body) : 'Última versión disponible';
 
-            // Generar botones de descarga
-            const buttonsContainer = document.getElementById('download-buttons');
-            buttonsContainer.innerHTML = '';
+                // Generar botones de descarga
+                const buttonsContainer =
+                    document.getElementById("download-buttons");
+                buttonsContainer.innerHTML = "";
 
-            release.assets.forEach(asset => {
-                const button = document.createElement('a');
-                button.href = asset.browser_download_url;
-                button.className = 'btn btn-primary btn-block btn-lg mb-3 w-100 shadow-sm download-btn';
-                button.download = asset.name;
+                release.assets.forEach((asset) => {
+                    const button = document.createElement("a");
+                    button.href = asset.browser_download_url;
+                    button.className =
+                        "btn btn-primary btn-block btn-lg mb-3 w-100 shadow-sm download-btn";
+                    button.download = asset.name;
 
+                    // Iconos según el tipo de archivo
+                    let icon = "";
+                    if (
+                        (asset.name.includes(".exe") ||
+                            asset.name.includes(".pkg") ||
+                            asset.name.includes(".dmg") ||
+                            asset.name.includes(".AppImage") ||
+                            asset.name.includes(".deb")) &&
+                        !asset.name.includes(".blockmap")
+                    ) {
+                        if (
+                            asset.name.includes(".dmg") ||
+                            asset.name.includes(".pkg")
+                        ) {
+                            icon = '<i class="fab fa-apple"></i> ';
+                            button.innerHTML = `${icon} Descargar para Mac (${formatFileSize(asset.size)})`;
+                        } else button.innerHTML = "Descargar";
 
-                // Iconos según el tipo de archivo
-                let icon = '';
-                if ((asset.name.includes('.exe') || asset.name.includes('.pkg') || asset.name.includes('.dmg') || asset.name.includes('.AppImage') || asset.name.includes('.deb')) && !asset.name.includes('.blockmap')) {
-                    if (asset.name.includes('.exe')) {
-                        icon = '<i class="fab fa-windows"></i> ';
-                    } else if (asset.name.includes('.dmg') || asset.name.includes('.pkg')) {
-                        icon = '<i class="fab fa-apple"></i> ';
-                    } else if (asset.name.includes('.AppImage') || asset.name.includes('.deb')) {
-                        icon = '<i class="fab fa-linux"></i> ';
+                        buttonsContainer.appendChild(button);
                     }
+                });
+            }
 
-                    button.innerHTML = `${icon}${asset.name} (${formatFileSize(asset.size)})`;
-                    buttonsContainer.appendChild(button);
-                }
+            function showError() {
+                document.getElementById("loading").style.display = "none";
+                document.getElementById("error").style.display = "block";
+            }
 
-            });
-        }
+            function formatFileSize(bytes) {
+                const sizes = ["Bytes", "KB", "MB", "GB"];
+                if (bytes === 0) return "0 Bytes";
+                const i = parseInt(
+                    Math.floor(Math.log(bytes) / Math.log(1024)),
+                );
+                return (
+                    Math.round((bytes / Math.pow(1024, i)) * 100) / 100 +
+                    " " +
+                    sizes[i]
+                );
+            }
 
-        function showError() {
-            document.getElementById('loading').style.display = 'none';
-            document.getElementById('error').style.display = 'block';
-        }
-
-        function formatFileSize(bytes) {
-            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
-            if (bytes === 0) return '0 Bytes';
-            const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
-            return Math.round(bytes / Math.pow(1024, i) * 100) / 100 + ' ' + sizes[i];
-        }
-
-        // Cargar al iniciar la página
-        loadLatestRelease();
-    </script>
-</body>
-
+            // Cargar al iniciar la página
+            loadLatestRelease();
+        </script>
+    </body>
 </html>
