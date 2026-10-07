@@ -465,7 +465,7 @@ section { scroll-margin-top: 72px; }
 /* ——— Contact Section ——— */
 .contact-section {
     background: var(--bg-base);
-    min-height: 80vh;
+    min-height: 58vh;
     display: flex;
     align-items: center;
     padding: 4rem 0;
@@ -488,6 +488,239 @@ section { scroll-margin-top: 72px; }
 
 .contact-item:hover {
     background-color: var(--bg-hover);
+}
+
+/* ——— Contact Page ——— */
+.contact-badge {
+    display: inline-flex;
+    align-items: center;
+    background: var(--accent-subtle);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    color: var(--accent);
+    border-radius: 999px;
+    padding: 0.45rem 1.15rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.contact-channels {
+    background: var(--bg-elevated);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.email-display {
+    display: inline-block;
+    background: var(--bg-surface);
+    border: 1.5px dashed rgba(59, 130, 246, 0.4);
+    border-radius: var(--radius);
+    padding: 0.9rem 1.5rem;
+    font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+    font-size: clamp(1.05rem, 3vw, 1.6rem);
+    font-weight: 600;
+    user-select: all;
+}
+
+.email-display a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.email-display a:hover { color: var(--accent-hover); }
+
+.copy-feedback {
+    min-height: 1.3rem;
+    color: var(--success);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Tarjeta de perfil del autor */
+.profile-section { background: var(--bg-base); }
+
+.profile-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 2rem;
+    box-shadow: var(--shadow);
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+    color: #fff;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 30px var(--accent-glow);
+}
+
+.experience-pill {
+    display: inline-flex;
+    align-items: center;
+    background: var(--success-subtle);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    color: var(--success);
+    border-radius: 999px;
+    padding: 0.5rem 1.15rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.profile-list li {
+    position: relative;
+    padding-left: 1.9rem;
+    color: var(--text-secondary);
+}
+
+.profile-list i {
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    color: var(--success);
+}
+
+.quote-block {
+    background: var(--bg-surface);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.quote-block i { color: var(--accent); font-style: normal; }
+
+/* Compromisos */
+.commit-section {
+    background: var(--bg-elevated);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.commit-card {
+    background: var(--bg-base);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem 1.5rem;
+    height: 100%;
+    transition: var(--transition);
+}
+
+.commit-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: var(--shadow-accent);
+}
+
+.commit-card p { color: var(--text-secondary); }
+
+.commit-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: var(--radius-sm);
+    background: var(--accent-subtle);
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.commit-card:hover .commit-icon { transform: scale(1.1); }
+
+/* caredu.dev */
+.hub-section { background: var(--bg-base); }
+
+.hub-card {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(34, 197, 94, 0.08) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-accent);
+}
+
+.hub-icon {
+    width: 76px;
+    height: 76px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+    color: #fff;
+    font-size: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 30px var(--accent-glow);
+    animation: float 3.5s ease-in-out infinite;
+}
+
+.hub-points {
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto 0;
+    max-width: 42rem;
+    text-align: left;
+}
+
+.hub-points li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: var(--text-secondary);
+    padding: 0.5rem 0;
+}
+
+.hub-points i { color: var(--success); margin-top: 0.35rem; }
+
+/* Preguntas frecuentes */
+.faq-section {
+    background: var(--bg-elevated);
+    border-top: 1px solid var(--border);
+}
+
+.faq-accordion .accordion-item {
+    background: var(--bg-base);
+    border: 1px solid var(--border);
+    border-radius: var(--radius) !important;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+}
+
+.faq-accordion .accordion-button {
+    background: var(--bg-base);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+    background: var(--accent-subtle);
+    color: var(--accent);
+}
+
+.faq-accordion .accordion-button:focus {
+    box-shadow: none;
+    border-color: var(--accent);
+}
+
+.faq-accordion .accordion-button::after { filter: invert(0.7); }
+
+.faq-accordion .accordion-body {
+    background: var(--bg-base);
+    color: var(--text-secondary);
+}
+
+/* Llamado a la acción final */
+.cta-band {
+    background: var(--bg-base);
+    border-top: 1px solid var(--border);
 }
 
 /* ——— Formularios ——— */
