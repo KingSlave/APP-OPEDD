@@ -19,7 +19,7 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="css/styles.css?v=0.8.0" />
+        <link rel="stylesheet" href="css/styles.css?v=0.8.1" />
         <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
@@ -88,6 +88,12 @@
             <div class="container">
                 <div class="row align-items-center min-vh-75">
                     <div class="col-lg-6">
+                        <div class="mb-3">
+                            <span class="free-badge">
+                                <i class="fas fa-gift" aria-hidden="true"></i>
+                                Gratis
+                            </span>
+                        </div>
                         <h1 class="display-4 fw-bold mb-4">Organizador PEDD</h1>
                         <p class="lead mb-4">
                             Pon todo en orden para participar en el Programa de
@@ -286,36 +292,29 @@
 
                                 <div id="loading" class="alert alert-info">
                                     <i class="fas fa-spinner fa-spin"></i>
-                                    Cargando último release...
+                                    Cargando la última versión...
                                 </div>
 
                                 <div id="release-info" style="display: none">
-                                    <div class="">
-                                        <h2
-                                            class="fw-bold text-primary mb-3"
-                                            id="release-version"
-                                        ></h2>
-                                        <!-- <div id="release-description" class="markdown-container text-start mt-4 mb-4"></div> -->
-                                        <div
-                                            class="buttons grid gap-3"
-                                            id="download-buttons"
-                                            style="
-                                                position: relative;
-                                                width: 100%;
-                                            "
-                                        >
-                                            <!-- Los botones se generarán dinámicamente -->
-                                        </div>
-
-                                        <a
-                                            href="https://apps.microsoft.com/detail/9P4FKMVJQBRJ?hl=es&gl=MX&ocid=pdpshare"
-                                            target="_blank"
-                                            class="btn btn-success btn-block btn-lg mt-3 w-100 shadow-sm"
-                                        >
-                                            <i class="fab fa-windows me-2"></i>
-                                            Descargar para Windows desde
-                                            Microsoft Store
-                                        </a>
+                                    <h2
+                                        class="fw-bold text-primary text-center mb-2"
+                                        id="release-version"
+                                    ></h2>
+                                    <p
+                                        class="text-center text-muted small mb-3"
+                                        id="release-date"
+                                        style="display: none"
+                                    ></p>
+                                    <!-- <div id="release-description" class="markdown-container text-start mt-4 mb-4"></div> -->
+                                    <div
+                                        class="buttons grid gap-3"
+                                        id="download-buttons"
+                                        style="
+                                            position: relative;
+                                            width: 100%;
+                                        "
+                                    >
+                                        <!-- Los botones se generarán dinámicamente -->
                                     </div>
                                 </div>
 
@@ -324,8 +323,52 @@
                                     class="alert alert-warning"
                                     style="display: none"
                                 >
-                                    Aún no se ha liberado ninguna versión.
+                                    <i class="fas fa-circle-info me-2"></i>
+                                    No se pudo cargar la última versión en este
+                                    momento.
+                                    <a
+                                        href="https://github.com/KingSlave/APP-OPEDD/releases/latest"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Ver todas las versiones en GitHub</a
+                                    >
                                 </div>
+
+                                <a
+                                    href="https://apps.microsoft.com/detail/9P4FKMVJQBRJ?hl=es&gl=MX&ocid=pdpshare"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="btn btn-success btn-block btn-lg mt-3 w-100 shadow-sm"
+                                >
+                                    <i class="fab fa-windows me-2"></i>
+                                    Descargar para Windows desde Microsoft
+                                    Store
+                                </a>
+
+                                <div
+                                    class="d-flex flex-wrap justify-content-center gap-3 mt-3 small text-muted"
+                                >
+                                    <span class="d-inline-flex align-items-center">
+                                        <i
+                                            class="fas fa-gift me-2"
+                                            style="color: var(--success)"
+                                        ></i>
+                                        Gratis, sin cuentas ni publicidad
+                                    </span>
+                                    <span class="d-inline-flex align-items-center">
+                                        <i
+                                            class="fas fa-lock me-2"
+                                            style="color: var(--info)"
+                                        ></i>
+                                        Tus archivos se quedan en tu equipo
+                                    </span>
+                                </div>
+
+                                <p class="text-center text-muted small mb-0 mt-3">
+                                    <i class="fab fa-windows me-1"></i>
+                                    <i class="fab fa-apple me-1"></i>
+                                    Windows 10/11 · macOS
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -389,6 +432,21 @@
             function displayRelease(release) {
                 document.getElementById("loading").style.display = "none";
                 document.getElementById("release-info").style.display = "block";
+
+                document.getElementById("release-version").textContent =
+                    "Versión " +
+                    (release.tag_name || "").replace(/^v(?=\d)/i, "");
+
+                const releaseDate = document.getElementById("release-date");
+                if (release.published_at) {
+                    releaseDate.textContent =
+                        "Última actualización: " +
+                        new Date(release.published_at).toLocaleDateString(
+                            "es-MX",
+                            { day: "numeric", month: "long", year: "numeric" },
+                        );
+                    releaseDate.style.display = "block";
+                }
 
                 // document.getElementById('release-description').innerHTML = release.body ? marked.parse(release.body) : 'Última versión disponible';
 
